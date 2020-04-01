@@ -11,3 +11,7 @@
 [Function Composition](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0)
 
 [Pipe](https://medium.com/@venomnert/pipe-function-in-javascript-8a22097a538e)
+
+[Event Emmiter](https://medium.com/better-programming/the-publisher-subscriber-pattern-in-javascript-2b31b7ea075a)
+
+[Event Emmiter with nodejs](https://medium.com/@pongpiraupra/decoupling-modules-using-publisher-subscriber-in-node-js-7dd22206ad13)
