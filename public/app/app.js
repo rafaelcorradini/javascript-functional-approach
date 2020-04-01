@@ -1,6 +1,7 @@
 import { notasService as service } from './nota/service.js'; 
 import { takeUntil, debounceTime, pipe, partialize } from './utils/operators.js'
-import { timeoutPromise, delay, retry } from './utils/promise-helpers.js'
+import { timeoutPromise, retry } from './utils/promise-helpers.js'
+import { EventEmitter } from './utils/event-emitter.js'
 
 const operations = pipe(
   partialize(takeUntil, 3),
@@ -9,9 +10,8 @@ const operations = pipe(
 
 const action = operations(() => 
   retry(3, 3000, () => timeoutPromise(200, service.sumItemsByCode('2143')))
-    .then(delay(5000))
-    .then(console.log)
-    .catch(console.log)
+    .then(total => EventEmitter.emit('total', total))
+    .catch(console.error)
 )
 
 document
