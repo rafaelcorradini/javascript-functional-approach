@@ -15,3 +15,5 @@
 [Event Emmiter](https://medium.com/better-programming/the-publisher-subscriber-pattern-in-javascript-2b31b7ea075a)
 
 [Event Emmiter with nodejs](https://medium.com/@pongpiraupra/decoupling-modules-using-publisher-subscriber-in-node-js-7dd22206ad13)
+
+[Monads](https://medium.com/javascript-scene/javascript-monads-made-simple-7856be57bfe8)
